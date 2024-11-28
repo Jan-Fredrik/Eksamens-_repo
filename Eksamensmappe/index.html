@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="Ikoner/css/brands.css" rel="stylesheet">
+    <link href="Ikoner/css/solid.css" rel="stylesheet">
+    <link href="Ikoner/css/regular.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eksamen | Forside</title>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <div id="flex-container">
+        <header>                                <!-- UU-tiltak:"aria label" og "tabindex" for "usynlig" tab-navigasjon mellom hovedsidene -->
+            <aside id="invis-shortcuts">        <!-- som etter hvert går gjennom headeren-->
+                <details>
+                    <summary>
+                        <h1 tabindex="0" aria-label="snarvei meny">snarvei-meny| trykk enter</h1>
+                    </summary>
+                <ul>
+                <li>
+                    <details>
+                    <summary>
+                        Forside
+                    </summary>
+                    <a href="index.html#popular-shortcut">1/4 Populære varer</a>
+                    <a href="index.html#category-shortcut">2/4 Kategorier</a>
+                    <a href="index.html#review-shortcut">3/4 Anmeldelser</a>
+                    <a href="index.htmlfooter-shortcuts">4/4 Footer</a>
+                </details></li>
+                <li>
+                    <details>
+                    <summary>
+                        produktside
+                    </summary>
+                    <a href="product.html#">1/3 Produkt</a>
+                    <a href="product.html#lignende-produkter">2/3 Lignende produkter</a>
+                    <a href="product.html#footer-shortcuts">3/3 Footer</a>
+                </details>
+            </li>
+                <li>
+                    <details>
+                        <summary>
+                            Handlevogn
+                        </summary>
+                        <a href="checkout.html#shopping-cart">1/5 Handlekurv</a>
+                        <a href="checkout.html#personalia-section">2/5 Dine Opplysninger</a>
+                        <a href="checkout.html#delivery-section">3/5 Levering</a>
+                        <a href="checkout.html#payment-section">4/5 Betaling</a>
+                        <a href="checkout.html#footer-shortcuts">5/5 Footer</a>
+                    </details>
+                </li>
+                </ul>   
+                </details>
+                </aside>
+            <div id="global-header">
+                <label for="search-input"></label>
+                    <section id="header-search">
+                        <form id="search-header-box">
+                        <input type="text" id="search-input" placeholder="Søk her .." aria-label="Søkeboks">
+                        <button tabindex="0" aria-label="søke-knapp"><i id="search-box-icon" class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </section>
+                <nav>
+                    <ul>
+                        <li><a class="hover" href="index.html" tabindex="0" aria-label="">Hjem</a></li>
+                        <li><a class="hover" href="index.html#popular-shortcut" tabindex="0" aria-label="snarvei til produkter">Produkter</a></li>
+                        <li><a href="index.html" id="logo" tabindex="0" aria-label="Logo, snarvei til forsiden"><img src="bilder/toy.jpg"  alt="Logo: bilde av badeand"></a></li>
+                        <li><a class="hover" href="index.html#category-shortcut" tabindex="0" aria-label="snarvei til kategorier">Kategorier</a></li>
+                        <li><a class="hover" href="index.html#contact-shortcut" tabindex="0" aria-label="snarvei til Kontakt-informasjon">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+                <section id="account-direct">
+                    <a href="#" tabindex="0" aria-label="snarvei til bruker innstillinger"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" tabindex="0" aria-label="snarvei til favoritter"><i class="fa-solid fa-heart"></i></a>
+                    <a href="checkout.html" tabindex="0" aria-label="snarvei til handlevogn"><i class="fa-solid fa-cart-shopping"></i></a>
+                </section>
+            </div>
+        </header>
+        <main>
+            <h1 tabindex="0" aria-label="Velkommen til nettsiden'">Velkommen</h1>
+
+            <!-- UU-tiltak: aria labels og tabindex prioriteringer for sliderens hoved-elementer
+              slik som tittel, innhold og les-mer-knapp -->
+
+            <section id="scroll-banner">
+                <i id="banner-arrow-left" class="fa-solid fa-arrow-left"></i>
+                <section id="scroll-container" tabindex="0" aria-label="bildeseksjon med slider">
+                <article id="banner-card">
+                    <h3 class="banner-card-title" tabindex="0" aria-label="bilde1:*tittel*">Lorum Ipsum</h3>
+                    <p class="banner-card-text" tabindex="0" aria-label="beskrivelse/innhold">I've aligned you 14 different ways <br> and yet centered you are not. <br> Do you even understand flexbox?</p>
+                    <a class="banner-card-button" href="#" tabindex="0" aria-label="knapp for å lese mer">Les mer</a>
+                    <img class="banner-card-image" src="bilder/goose-water.jpg" alt="bilde som endrer seg ved refresh av siden">
+                </article>
+                <article id="banner-card2">
+                    <h3 class="banner-card-title" tabindex="0" aria-label="bilde2: *tittel*">Lorum Ipsum</h3>
+                    <p class="banner-card-text" tabindex="0" aria-label="*beskrivelse/innhold*">I've aligned you 14 different ways <br> and yet centered you are not. <br> Do you even understand flexbox?</p>
+                    <a class="banner-card-button" href="#" tabindex="0" aria-label="knapp for å lese mer">Les mer</a>
+                    <img class="banner-card-image" src="bilder/goose-water.jpg" alt="bilde som endrer seg ved refresh av siden">
+                </article>
+                <article id="banner-card3">
+                    <h3 class="banner-card-title" tabindex="0" aria-label="bilde3: *tittel*">Lorum Ipsum</h3>
+                    <p class="banner-card-text" tabindex="0" aria-label="beskrivelse/innhold">I've aligned you 14 different ways <br> and yet centered you are not. <br> Do you even understand flexbox?</p>
+                    <a class="banner-card-button" href="#" tabindex="0" aria-label="knapp for å lese mer">Les mer</a>
+                    <img class="banner-card-image" src="bilder/goose-water.jpg" alt="bilde som endrer seg ved refresh av siden">
+                </article>
+            </section>
+            <i id="banner-arrow-right" class="fa-solid fa-arrow-right"></i>
+            </section>
+            <!-- UU-tiltak: aria-labels og tabindexer for å veilede tab-stien gjennom alle produktene-->
+            <!-- Opplesningsmessig har jeg prøvd å hatt med alt det jeg har tenkt hadde vært nødvendig for oppslesningverktøy -->
+            <section id="popular-header">
+                <h2 id="popular-shortcut" tabindex="0" aria-label="Mest populære produkter">Våre mest populære produkter</h2>
+                <p>Oppdag det beste av det beste</p>
+            </section>
+            <section id="filter-button-section">
+                <!-- UU-tiltak: opplesning av filtrering -->
+                <a id="filter-default" href="#" tabindex="0" aria-label="filterknapp for nye produkter, aktiv">New Product</a>
+                <a href="#" tabindex="0" aria-label="fliterknapp til spesial priser, inaktiv">Special Price</a>
+                <a href="#" tabindex="0" aria-label="filterknapp til bestselgere, inaktiv">Best sellers</a>
+            </section>
+            <section id="popular-article-section">
+                <!-- UU-tiltak: opplesning av viktig info om varen før man finner ut mer på produktsiden -->
+                 <!-- Slike ting som produktnavn, pris, rating og antall reviews, og bildebeskrivelser. Gjelder for alle kortene nedenfor -->
+                <article class="popular-article" itemscope itemtype="https://schema.org/Product">
+                    <button class="fave-article-button" tabindex="0" aria-label="legg til produkt i favoitter"><i class="fa-regular fa-heart"></i></button>
+                    <img src="bilder/strolling-goose.png" alt="bilde av gås" itemprop="image">
+                    <section class="popular-article-text">
+                        <a href="product.html" tabindex="0" aria-label="produkt navn"><strong itemprop="name">Product name</strong></a>
+                        <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </section>
+                    <section class="popular-article-rating" tabindex="0" aria-label="score: x/y" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="reviewCount" content="842">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p tabindex="0" aria-label="antall anmeldelser">842 Reviews</p>
+                    </section>
+                </article>
+                <article class="popular-article" itemscope itemtype="https://schema.org/Product">
+                    <button class="fave-article-button" tabindex="0" aria-label="legg til produkt i favoitter"><i class="fa-regular fa-heart"></i></button>
+                    <img src="bilder/strolling-goose.png" alt="bilde av gås" itemprop="image">
+                    <section class="popular-article-text">
+                        <a href="product.html" tabindex="0" aria-label="produkt navn"><strong itemprop="name">Product name</strong></a>
+                        <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </section>
+                    <section class="popular-article-rating" tabindex="0" aria-label="score: x/y" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="reviewCount" content="842">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p tabindex="0" aria-label="antall anmeldelser">842 Reviews</p>
+                    </section>
+                </article>
+                <article class="popular-article" itemscope itemtype="https://schema.org/Product">
+                    <button class="fave-article-button" tabindex="0" aria-label="legg til produkt i favoitter"><i class="fa-regular fa-heart"></i></button>
+                    <img src="bilder/strolling-goose.png" alt="bilde av gås" itemprop="image">
+                    <section class="popular-article-text">
+                        <a href="product.html" tabindex="0" aria-label="produkt navn"><strong itemprop="name">Product name</strong></a>
+                        <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </section>
+                    <section class="popular-article-rating" tabindex="0" aria-label="score: x/y" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="reviewCount" content="842">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p tabindex="0" aria-label="antall anmeldelser">842 Reviews</p>
+                    </section>
+                </article>
+                <article class="popular-article" itemscope itemtype="https://schema.org/Product">
+                    <button class="fave-article-button" tabindex="0" aria-label="legg til produkt i favoitter"><i class="fa-regular fa-heart"></i></button>
+                    <img src="bilder/strolling-goose.png" alt="bilde av gås" itemprop="image">
+                    <section class="popular-article-text">
+                        <a href="product.html" tabindex="0" aria-label="produkt navn"><strong itemprop="name">Product name</strong></a>
+                        <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </section>
+                    <section class="popular-article-rating" tabindex="0" aria-label="score: x/y" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="reviewCount" content="842">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p tabindex="0" aria-label="antall anmeldelser">842 Reviews</p>
+                    </section>
+                </article>
+                <article class="popular-article" itemscope itemtype="https://schema.org/Product">
+                    <button class="fave-article-button" tabindex="0" aria-label="legg til produkt i favoitter"><i class="fa-regular fa-heart"></i></button>
+                    <img src="bilder/strolling-goose.png" alt="bilde av gås" itemprop="image">
+                    <section class="popular-article-text">
+                        <a href="product.html" tabindex="0" aria-label="produkt navn"><strong itemprop="name">Product name</strong></a>
+                        <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </section>
+                    <section class="popular-article-rating" tabindex="0" aria-label="score: x/y" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="reviewCount" content="842">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p tabindex="0" aria-label="antall anmeldelser">842 Reviews</p>
+                    </section>
+                </article>
+                <article class="popular-article" itemscope itemtype="https://schema.org/Product">
+                    <button class="fave-article-button" tabindex="0" aria-label="legg til produkt i favoitter"><i class="fa-regular fa-heart"></i></button>
+                    <img src="bilder/strolling-goose.png" alt="bilde av gås" itemprop="image">
+                    <section class="popular-article-text">
+                        <a href="product.html" tabindex="0" aria-label="produkt navn"><strong itemprop="name">Product name</strong></a>
+                        <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </section>
+                    <section class="popular-article-rating" tabindex="0" aria-label="score: x/y" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="reviewCount" content="842">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p tabindex="0" aria-label="antall anmeldelser">842 Reviews</p>
+                    </section>
+                </article>
+            </section>
+            <!-- UU-tiltak: aria-labels, tabindexer og bilde-beskrivelser -->
+            <!-- Går igjennom boksene og med mulighet for opplesning opp kategoriene samt bildebeskrivelser i alt-attributt -->
+            <h2 id="category-shortcut" tabindex="0" aria-label="våre mest populære kategorier"><strong>Våre mest populære kategorier</strong></h2>
+            <p itemprop="description">Oppdag det beste av det beste</p>
+            <section id="popular-categories" itemscope itemtype="https://schema.org/ItemList">
+                <section id="cat1" tabindex="0" aria-label="kategori 1" itemscope itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="1">
+                    <p itemprop="name">Category 1</p>
+                    <img src="bilder/cat1.jpg" alt="bilde: hund med briller" itemprop="image">
+                </section>
+                <section id="cat2" tabindex="0" aria-label="kategori 2" itemscope itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="2">
+                    <p itemprop="name">Category 2</p>
+                    <img src="bilder/cat2.jpg" alt="bilde: dame med bart" itemprop="image">
+                </section>
+                <section id="cat3" tabindex="0" aria-label="kategori 3" itemscope itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="3">
+                    <p itemprop="name">Category 3</p>
+                    <img src="bilder/cat3.2.jpg" alt="bilde: and/gås" itemprop="image">
+                </section>
+                <section id="cat4" tabindex="0" aria-label="kategori 4" itemscope itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="4">
+                    <p itemprop="name">Category 4</p>
+                    <img src="bilder/cat4.png" alt="bilde: kermits" itemprop="image">
+                </section>
+                <section id="cat5" tabindex="0" aria-label="kategori 5" itemscope itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="5">
+                    <p itemprop="name">Category 5</p>
+                    <img src="bilder/serious-goose.jpg" alt="bilde: snømann" itemprop="image">
+                </section>
+            </section>
+            <!--       UU-tiltak       -->
+             <!-- Anmeldelses-opplesning av produkter: 
+              Leser opp navn, bilde-beskrivelse om det fins, gj.snitt ratingscore, så anmeldelsesbeskrivelse   -->
+            <h2 tabindex="0" aria-label="produkt anmeldelser"><strong>Anmeldelser</strong></h2>
+                <section id="reviews-container">
+                    <article class="review-card">
+                        <meta itemprop="name" content="Kalle Anka">
+                        <img src="bilder/kalle-anka.jpg" alt="bilde av gås" itemprop="image">
+                        <p tabindex="0" aria-label="*forfatter av anmeldelse*" itemprop="name"><strong>Kalle Anka</strong></p>
+                        <section tabindex="0" aria-label="produkt poengscore" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </section>
+                        <p tabindex="0" aria-label="*ameldelse av produkt*" itemprop="reviewBody">
+                            Gås gåsum, vralter stolt gjennom dammens speilbilde. Honk honk, sier d  en, mens fjærene glitrer i 
+                            solens varme stråler. Plask plask, føttene danser på vannet, og verden står stille. 
+                            Honk du gås, for hvem kan stå imot din majestet?
+                        </p>
+                    </article>
+                    <article class="review-card">
+                        <meta itemprop="name" content="Kalle Anka">
+                        <img src="bilder/kalle-anka.jpg" alt="bilde av gås" itemprop="image">
+                        <p tabindex="0" aria-label="forfatter av anmeldelse" itemprop="name"><strong>Kalle Anka</strong></p>
+                        <section tabindex="0" aria-label="produkt poengscore" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </section>
+                        <p tabindex="0" aria-label="ameldelse av produkt" itemprop="reviewBody">
+                            Gås gåsum, vralter stolt gjennom dammens speilbilde. Honk honk, sier den, mens fjærene glitrer i 
+                            solens varme stråler. Plask plask, føttene danser på vannet, og verden står stille. 
+                            Honk du gås, for hvem kan stå imot din majestet?
+                        </p>
+                    </article>  
+                    <article class="review-card">
+                        <meta itemprop="name" content="Kalle Anka">
+                        <img src="bilder/kalle-anka.jpg" alt="bilde av gås" itemprop="image">
+                        <p tabindex="0" aria-label="forfatter av anmeldelse" itemprop="name"><strong>Kalle Anka</strong></p>
+                        <section tabindex="0" aria-label="produkt poengscore" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </section>
+                        <p tabindex="0" aria-label="ameldelse av produkt" itemprop="reviewBody">
+                            Gås gåsum, vralter stolt gjennom dammens speilbilde. Honk honk, sier den, mens fjærene glitrer i 
+                            solens varme stråler. Plask plask, føttene danser på vannet, og verden står stille. 
+                            Honk du gås, for hvem kan stå imot din majestet?
+                        </p>
+                    </article>
+                    <article class="review-card">
+                        <meta itemprop="name" content="Kalle Anka">
+                        <img src="bilder/kalle-anka.jpg" alt="bilde av gås" itemprop="image">
+                        <p tabindex="0" aria-label="forfatter av anmeldelse" itemprop="name"><strong>Kalle Anka</strong></p>
+                        <section tabindex="0" aria-label="produkt poengscore" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </section>
+                        <p tabindex="0" aria-label="ameldelse av produkt" itemprop="reviewBody">
+                            Gås gåsum, vralter stolt gjennom dammens speilbilde. Honk honk, sier den, mens fjærene glitrer i 
+                            solens varme stråler. Plask plask, føttene danser på vannet, og verden står stille. 
+                            Honk du gås, for hvem kan stå imot din majestet?
+                        </p>
+                    </article>
+                    <article class="review-card">
+                        <meta itemprop="name" content="Kalle Anka">
+                        <img src="bilder/kalle-anka.jpg" alt="bilde av gås" itemprop="image">
+                        <p tabindex="0" aria-label="forfatter av anmeldelse" itemprop="name"><strong>Kalle Anka</strong></p>
+                        <section tabindex="0" aria-label="produkt poengscore" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </section>
+                        <p tabindex="0" aria-label="ameldelse av produkt" itemprop="reviewBody">
+                            Gås gåsum, vralter stolt gjennom dammens speilbilde. Honk honk, sier den, mens fjærene glitrer i 
+                            solens varme stråler. Plask plask, føttene danser på vannet, og verden står stille. 
+                            Honk du gås, for hvem kan stå imot din majestet?
+                        </p>
+                    </article>
+                    <article class="review-card">
+                        <meta itemprop="name" content="Kalle Anka">
+                        <img src="bilder/kalle-anka.jpg" alt="bilde av gås" itemprop="image">
+                        <p tabindex="0" aria-label="forfatter av anmeldelse" itemprop="name"><strong>Kalle Anka</strong></p>
+                        <section tabindex="0" aria-label="produkt poengscore" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </section>
+                        <p tabindex="0" aria-label="ameldelse av produkt" itemprop="reviewBody">
+                            Gås gåsum, vralter stolt gjennom dammens speilbilde. Honk honk, sier den, mens fjærene glitrer i 
+                            solens varme stråler. Plask plask, føttene danser på vannet, og verden står stille. 
+                            Honk du gås, for hvem kan stå imot din majestet?
+                        </p>
+                    </article>
+                </section>
+            </main>
+                <footer>
+                     <!--       UU-tiltak       -->
+                     <!-- Tab-dirigering og opplesning for kontaktinfo -->
+                    <section id="footer-logo" itemscope itemtype="https://schema.org/Organization">
+                        <a href="index.html"><img src="bilder/toy.jpg" alt="logo, bilde av and" id="footer-img"></a>
+                        <p><span itemprop="name">GooseX</span> - mot evigheten og forbi!</p>
+                    </section>
+                    <section id="info-section">
+                        <section>
+                            <h3 id="contact-shortcut" tabindex="0" aria-label="kontakt informasjon">KONTAKT OSS</h3>
+                            <ul>
+                                <li tabindex="0" aria-label="adresse"><i class="fa-solid fa-location-dot"></i><strong>Adresse: </strong>B R A Veien 4, 1757 Halden</li>
+                                <li tabindex="0" aria-label="telefon"><i class="fa-solid fa-mobile-screen-button"></i><strong>Telefon: </strong>69 60 80 00</li>
+                                <li tabindex="0" aria-label="epost"><i class="fa-solid fa-envelope"></i><strong>E-post: </strong><a href="mailto:halden@hiof.no">halden@hiof.no</a></li>
+                                <li tabindex="0" aria-label="åpningstider"><i class="fa-solid fa-clock"></i><strong>Åpningstider: </strong>Stenger 15:00</li>
+                            </ul>
+                        </section>
+                        <!-- UU-tiltak -->
+                         <!-- Snarvei linker for nåværende side og produktside  -->
+                        <section id="footer-shortcuts">
+                            <h3 tabindex="0" aria-label="snarvei linker">SNARVEIER</h3>
+                            <ul>
+                                <li><a href="index.html#popular-shortcut" tabindex="0" aria-label="snarvei til produkter">Produkter</a></li>
+                                <li><a href="index.html#category-shortcut" tabindex="0" aria-label="snarvei til kategorier">Kategorier</a></li>
+                                <li><a href="#contact-shortcut"  tabindex="0" aria-label="snarvei til kontaktinformasjon">Kontakt oss</a></li>
+                                <li><a href="#">Tilgjengelighetserklæring</a></li>
+                            </ul>
+                        </section>
+                        <!-- UU-tiltak -->
+                         <!-- Opplesning og lenking til "GooseX" sosiale medier -->
+                        <section>
+                            <h3 tabindex="0" aria-label="linking til sosiale medier">SOSIALE MEDIER</h3>
+                            <ul id="social-media-icon">
+                                <li><a href="https://www.instagram.com/" tabindex="0" aria-label="link til instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/" tabindex="0" aria-label="link til facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/home" tabindex="0" aria-label="link til LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://no.pinterest.com/" tabindex="0" aria-label="link til pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+                            </ul>
+                        </section>
+                    </section>
+                    <!-- UU-tiltak -->
+                     <!-- Snarvei link til "usynlig"-snarvei-boks i toppen av nettsiden for tab-navigering mellom sidene -->
+                    <aside id="shortcut-position-box">
+                     <a href="#invis-shortcuts" id="shortcut-top" tabindex="0" aria-label="snarvei til toppen/snarvei-meny">Til toppen</a>
+                    </aside>
+                </footer>
+            </div>
+        </body>
+        </html>

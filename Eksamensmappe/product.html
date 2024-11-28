@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="Ikoner/css/brands.css" rel="stylesheet">
+    <link href="Ikoner/css/solid.css" rel="stylesheet">
+    <link href="Ikoner/css/regular.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eksamen | Produkt</title>
+</head>
+<body id="product-body">
+    <div id="flex-container">
+        <header>                                <!-- UU-tiltak:"aria label" og "tabindex" for "usynlig" tab-navigasjon mellom hovedsidene -->
+            <aside id="invis-shortcuts">        <!-- som etter hvert går gjennom headeren-->
+                <details>
+                    <summary>
+                        <h1 tabindex="0" aria-label="snarvei meny">snarvei-meny| trykk enter</h1>
+                    </summary>
+                <ul>
+                <li>
+                    <details>
+                    <summary>
+                        Forside
+                    </summary>
+                    <a href="index.html#popular-shortcut">1/4 Populære varer</a>
+                    <a href="index.html#category-shortcut">2/4 Kategorier</a>
+                    <a href="index.html#review-shortcut">3/4 Anmeldelser</a>
+                    <a href="index.htmlfooter-shortcuts">4/4 Footer</a>
+                </details></li>
+                <li>
+                    <details>
+                    <summary>
+                        produktside
+                    </summary>
+                    <a href="product.html#">1/3 Produkt</a>
+                    <a href="product.html#lignende-produkter">2/3 Lignende produkter</a>
+                    <a href="product.html#footer-shortcuts">3/3 Footer</a>
+                </details>
+            </li>
+                <li>
+                    <details>
+                        <summary>
+                            Handlevogn
+                        </summary>
+                        <a href="checkout.html#shopping-cart">1/5 Handlekurv</a>
+                        <a href="checkout.html#personalia-section">2/5 Dine Opplysninger</a>
+                        <a href="checkout.html#delivery-section">3/5 Levering</a>
+                        <a href="checkout.html#payment-section">4/5 Betaling</a>
+                        <a href="checkout.html#footer-shortcuts">5/5 Footer</a>
+                    </details>
+                </li>
+                </ul>   
+                </details>
+                </aside>
+            <div id="global-header">
+                <label for="search-input"></label>
+                    <section id="header-search">
+                        <form id="search-header-box">
+                        <input type="text" id="search-input" placeholder="Søk her .." aria-label="Søkeboks">
+                        <button tabindex="0" aria-label="søke-knapp"><i id="search-box-icon" class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </section>
+                <nav>
+                    <ul>
+                        <li><a class="hover" href="index.html" tabindex="0" aria-label="">Hjem</a></li>
+                        <li><a class="hover" href="index.html#popular-shortcut" tabindex="0" aria-label="snarvei til produkter">Produkter</a></li>
+                        <li><a href="index.html" id="logo" tabindex="0" aria-label="Logo, snarvei til forsiden"><img src="bilder/toy.jpg"  alt="Logo: bilde av badeand"></a></li>
+                        <li><a class="hover" href="index.html#category-shortcut" tabindex="0" aria-label="snarvei til kategorier">Kategorier</a></li>
+                        <li><a class="hover" href="index.html#contact-shortcut" tabindex="0" aria-label="snarvei til Kontakt-informasjon">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+                <section id="account-direct">
+                    <a href="#" tabindex="0" aria-label="snarvei til bruker innstillinger"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" tabindex="0" aria-label="snarvei til favoritter"><i class="fa-solid fa-heart"></i></a>
+                    <a href="checkout.html" tabindex="0" aria-label="snarvei til handlevogn"><i class="fa-solid fa-cart-shopping"></i></a>
+                </section>
+            </div>
+        </header>
+        <!--       UU-tiltak       -->
+        <!-- Mulighet for å gå tilbake til forsiden, kategori, eller hoppe rett opp til toppen igjen -->
+        <main class="product-page">
+          <section id="product-breadcrumb" tabindex="0" aria-label="brødsmule sti">
+            <a href="index.html" tabindex="0" aria-label="hjem">Hjem</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="index.html#category-shortcut" tabindex="0" aria-label="kategori">Kategori</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="product.html" tabindex="0" aria-label="produkt"><strong>Produkt</strong></a>
+          </section>
+          <!--       UU-tiltak       -->
+        <!-- Aria labels, aria-describedby, aria-required, tabindexer og bildetekst -->
+         <!--  Dette for å gi et "bilde" av hva produktet er og inneholder,
+               hjelper kunden med å taste seg igjennom ønskede spesifikkasjoner som størrelse etc   -->
+          <article id="main-product" itemscope itemtype="https://schema.org/Product">
+            <section id="product-box">
+                <section id="small-imgs">
+                    <img id="prod-img-1" src="bilder/proud-goose.jpg" alt="bilde: stolt gås">
+                    <img id="prod-img-2" src="bilder/proud-goose.jpg" alt="bilde: stolt gås">
+                    <img id="prod-img-3" src="bilder/proud-goose.jpg" alt="bilde: stolt gås">
+                </section>
+                <section id="big-img">
+                    <img src="bilder/proud-goose.jpg" alt="bilde: stolt gås" itemprop="image">
+                </section>
+            </section>
+            <section id="product-info-box">
+                <h2 tabindex="0" aria-label="produktnavn: xxx" itemprop="name">GooseMeister 2000</h2>
+                <a href="index.html" tabindex="0" aria-label="lenking til leverandør: xxx">GooseX</a>
+                <p tabindex="0" aria-label="pris: xxxx" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">5195</span> kr inkl mva
+                <meta itemprop="priceCurrency" content="NOK"></p>
+                <p tabindex="0" aria-label="farge: xxxx">Farge: <strong>beige</strong></p>
+                <form>   
+                <label for="prod-size">
+                        <select id="prod-size" class="size-selector" name="size" required tabindex="0" aria-label="størrelsesvelger" aria-required="true">
+                            <option value="" selected disabled hidden>Velg størrelse</option>
+                            <option value="x-small" tabindex="0" aria-label="x-small">XS</option>
+                            <option value="small" tabindex="0" aria-label="small">S</option>
+                            <option value="medium" tabindex="0" aria-label="medium">M</option>
+                            <option value="large" tabindex="0" aria-label="large">L</option>
+                            <option value="x-large" tabindex="0" aria-label="x-large">XL</option>
+                        </select>
+                    </label>
+                    <section id="double-button">
+                    <label for="add-button">
+                            <input type="submit" name="size" id="add-button" value="Legg i handlekurv" tabindex="0" aria-label="legg-til-knapp">
+                    </label>
+                        <button id="button-heart" tabindex="0" aria-label="legg til i favoritter"><i class="fa-regular fa-heart"></i></button>
+                    </section>
+                </form> 
+                    <hr>
+                    <!--       UU-tiltak       -->
+                    <!-- Aria-describedby, aria-expanded, tabindex -->
+                    <!-- Opplesning av innhold, samt beskjed om boksen er skjult eller ei   -->
+                    <section id="material-box">
+                        <details aria-labelledby="mat-main-t">
+                            <summary tabindex="0" aria-expanded="false"><h5 id="mat-main-t">Materiale & vedlikehold</h5><i class="fa-solid fa-plus"></i></summary>
+                            <ul>
+                                <li>Overmateriale: 95% viskose, 5% elastan</li>
+                                <li>Materiale ermer: 100% Polyester</li>
+                                <li>Materiale: Jersey</li>
+                            </ul>
+                          </details>
+                    </section>
+                    <section id="detail-box">
+                        <details>
+                            <summary aria-labelledby="prod-d">
+                                <h5 id="prod-d">Produktdetaljer</h5><i class="fa-solid fa-plus"></i>
+                            </summary>
+                            <p>
+                                Epcot is a theme park at Walt Disney World Resort
+                                featuring exciting attractions, international pavilions,
+                                award-winning fireworks, and seasonal special events.
+                            </p>
+                        </details>
+                    </section>
+                    <section id="size-table">
+                        <details>
+                            <summary tabindex="0" aria-expanded="false"><h5 id="str-tbl">Størrelsestabell</h5><i class="fa-solid fa-plus"></i></summary>
+                            <p aria-describedby="str-tbl">
+                               Sjekk hvordan din vanlige størrelse konverterer til andre
+                               størrelser i vår størrelsesguide. Husk at dette kun er en
+                               generell guide og at størrelsene kan variere i forhold til
+                               merke og model
+                            </p>
+                            <!-- KI skrevet HTML SOM NEVT I DOKUMENTET -->
+                               <table aria-labelledby="str-tbl">
+                                <thead>
+                                    <tr>
+                                        <th>EU</th>
+                                        <th>INT</th>
+                                        <th>BRYST<br>VIDDE</th>
+                                        <th>LIV<br>VIDDE</th>
+                                        <th>HOFTE<br>MÅL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>XXS</td>
+                                        <td>76</td>
+                                        <td>63</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>XS</td>
+                                        <td>80</td>
+                                        <td>66</td>
+                                        <td>89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>S</td>
+                                        <td>84</td>
+                                        <td>69</td>
+                                        <td>93</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>M</td>
+                                        <td>88</td>
+                                        <td>72</td>
+                                        <td>97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>L</td>
+                                        <td>92</td>
+                                        <td>76</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>XL</td>
+                                        <td>96</td>
+                                        <td>80</td>
+                                        <td>103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>XXL</td>
+                                        <td>100</td>
+                                        <td>85</td>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>3XL</td>
+                                        <td>104</td>
+                                        <td>90</td>
+                                        <td>109</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>4XL</td>
+                                        <td>110</td>
+                                        <td>96.5</td>
+                                        <td>114</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>5XL</td>
+                                        <td>116</td>
+                                        <td>103</td>
+                                        <td>119</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52</td>
+                                        <td>6XL</td>
+                                        <td>122</td>
+                                        <td>109.5</td>
+                                        <td>124</td>
+                                    </tr>
+                                    <tr>
+                                        <td>54</td>
+                                        <td>7XL</td>
+                                        <td>128</td>
+                                        <td>116</td>
+                                        <td>130</td>
+                                    </tr>
+                                    <tr>
+                                        <td>56</td>
+                                        <td>8XL</td>
+                                        <td>134</td>
+                                        <td>122.5</td>
+                                        <td>136</td>
+                                    </tr>
+                                    <tr>
+                                        <td>58</td>
+                                        <td>9XL</td>
+                                        <td>140</td>
+                                        <td>129</td>
+                                        <td>142</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60</td>
+                                        <td>10XL</td>
+                                        <td>146</td>
+                                        <td>135.5</td>
+                                        <td>148</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- KI-KODE STOPP-->
+                          </details>
+                    </section>
+                    <section id="anmeldelser">
+                        <!--       UU-tiltak       -->
+                        <!--  aria-labels, aria-describedby, tabindexer for gjennomgang av anmeldelse   -->
+                        <details>
+                            <summary >
+                                <h5 tabindex="0">Anmeldelser</h5>
+                                    <span id="icon-rate" tabindex="0" aria-label="score: 4/5. antall reviews: 32">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        32
+                                    </span>
+                            </summary>
+                            <section id="rober-box">
+                                <section>
+                                    <p id="review-author" tabindex="0" aria-label="forfatter av anmeldelse og dato: (dato)">
+                                        Rober Labrador
+                                        <br><br>
+                                        2024-10-02</p>
+                                        <br><br>
+                                </section>
+                                <section id="rober-rating" tabindex="0" aria-label="score: 3 av 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>   
+                                </section>
+                                <br>
+                                <p tabindex="0" aria-describedby="review-author">Nam libero tempore, com soluta nobis est eligendi
+                                   optio cumque nihil impedit quo minus id quod.</p>
+                            </section>   
+                        </details>
+                    </section>
+                </section>
+          </article>
+                                      
+          <section id="similar-products-header">
+            <h2 tabindex="0" id="lignende-produkter">Lignende produkter</h2>
+            <a href="index.html#popular-shortcut">Se flere lignende produkter<i class="fa-solid fa-arrow-right"></i></a>
+          </section>
+                                                            <!--      UU-tiltak      -->
+                                    <!--   Aria-labels og tabindexer: relativt små og konkrete
+                                           artikler her, så har prøvd å tatt produktnavn, pris å knapper på alle kortene   -->  
+          <section id="similar-container">
+            <article class="similar-card" itemscope itemtype="https://schema.org/Product">
+                <img src="bilder/pondering-goose.png" alt="bilde av undrende gås" itemprop="image">
+                <section class="similar-card-head">
+                    <a href="product.html" itemprop="url"><strong itemprop="name">Pondering duck</strong></a>
+                    <p tabindex="0" aria-label="pris: 1999 kr">
+                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="NOK">Kr </span>
+                        <span itemprop="price" content="1999">1999</span></span></p>
+                </section>
+                <section class="similar-rate"  tabindex="0" aria-label="score: 4/5" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="reviewCount" content="842">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p tabindex="0" aria-label="antall reviews: 842" itemprop="reviewCount">842 Reviews</p>
+                </section>
+                <button class="product-fave-button" tabindex="0" aria-label="legg til vare i favoritter"><i class="fa-regular fa-heart"></i></button>
+            </article>
+            <article class="similar-card" itemscope itemtype="https://schema.org/Product">
+                <img src="bilder/angrygoose.png" alt="bilde av gås" itemprop="image">
+                <section class="similar-card-head">
+                    <a href="product.html" tabindex="0" aria-label="produktnavn" itemprop="url"><strong itemprop="name">Pondering duck</strong></a>
+                    <p tabindex="0" aria-label="pris: 1999 kr">
+                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="NOK">Kr </span>
+                        <span itemprop="price" content="1999">1999</span></span></p>
+                </section>
+                <section class="similar-rate"  tabindex="0" aria-label="score: 4/5" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="reviewCount" content="842">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p tabindex="0" aria-label="antall reviews: 842" itemprop="reviewCount">842 Reviews</p>
+                </section>
+                <button class="product-fave-button" tabindex="0" aria-label="legg til vare i favoritter"><i class="fa-regular fa-heart"></i></button>
+            </article> 
+            <article class="similar-card" itemscope itemtype="https://schema.org/Product">
+                <img src="bilder/proud-goose.jpg" alt="bilde av gås" itemprop="image">
+                <section class="similar-card-head">
+                    <a href="product.html" tabindex="0" aria-label="produktnavn" itemprop="url"><strong itemprop="name">Pondering duck</strong></a>
+                    <p tabindex="0" aria-label="pris: 1999 kr">
+                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="NOK">Kr </span>
+                        <span itemprop="price" content="1999">1999</span></span></p>
+                </section>
+                <section class="similar-rate"  tabindex="0" aria-label="score: 4/5" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="reviewCount" content="842">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p tabindex="0" aria-label="antall reviews: 842" itemprop="reviewCount">842 Reviews</p>
+                </section>
+                <button class="product-fave-button" tabindex="0" aria-label="legg til vare i favoritter"><i class="fa-regular fa-heart"></i></button>
+            </article>
+            <article class="similar-card" itemscope itemtype="https://schema.org/Product">
+                <img src="bilder/pondering-goose.png" alt="bilde av gås" itemprop="image">
+                <section class="similar-card-head">
+                    <a href="product.html" tabindex="0" aria-label="produktnavn" itemprop="url"><strong itemprop="name">Pondering duck</strong></a>
+                    <p tabindex="0" aria-label="pris: 1999 kr">
+                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="NOK">Kr </span>
+                        <span itemprop="price" content="1999">1999</span></span></p>
+                </section>
+                <section class="similar-rate"  tabindex="0" aria-label="score: 4/5" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="reviewCount" content="842">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p tabindex="0" aria-label="antall reviews: 842" itemprop="reviewCount">842 Reviews</p>
+                </section>
+                <button class="product-fave-button" tabindex="0" aria-label="legg til vare i favoritter"><i class="fa-regular fa-heart"></i></button>
+            </article>
+            <article class="similar-card" itemscope itemtype="https://schema.org/Product">
+                <img src="bilder/angrygoose.png" alt="bilde av gås" itemprop="image">
+                <section class="similar-card-head">
+                    <a href="product.html" tabindex="0" aria-label="produktnavn" itemprop="url"><strong itemprop="name">Pondering duck</strong></a>
+                    <p tabindex="0" aria-label="pris: 1999 kr">
+                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="NOK">Kr </span>
+                        <span itemprop="price" content="1999">1999</span></span></p>
+                </section>
+                <section class="similar-rate"  tabindex="0" aria-label="score: 4/5" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="reviewCount" content="842">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p tabindex="0" aria-label="antall reviews: 842" itemprop="reviewCount">842 Reviews</p>
+                </section>
+                <button class="product-fave-button" tabindex="0" aria-label="legg til vare i favoritter"><i class="fa-regular fa-heart"></i></button>
+            </article>
+            <article class="similar-card" itemscope itemtype="https://schema.org/Product">
+                <img src="bilder/proud-goose.jpg" alt="bilde av gås" itemprop="image">
+                <section class="similar-card-head">
+                    <a href="product.html" tabindex="0" aria-label="produktnavn" itemprop="url"><strong itemprop="name">Pondering duck</strong></a>
+                    <p tabindex="0" aria-label="pris: 1999 kr">
+                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="NOK">Kr </span>
+                        <span itemprop="price" content="1999">1999</span></span></p>
+                </section>
+                <section class="similar-rate"  tabindex="0" aria-label="score: 4/5" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="reviewCount" content="842">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p tabindex="0" aria-label="antall reviews: 842" itemprop="reviewCount">842 Reviews</p>
+                </section>
+                <button class="product-fave-button" tabindex="0" aria-label="legg til vare i favoritter"><i class="fa-regular fa-heart"></i></button>
+            </article>
+        </section>
+        </main>
+        <footer>
+            <!--       UU-tiltak       -->
+             <!-- Tab-dirigering og opplesning for kontaktinfo -->
+            <section id="footer-logo" itemscope itemtype="https://schema.org/Organization">
+                <img src="bilder/toy.jpg" alt="logo, bilde av and" id="footer-img">
+                <p><span itemprop="name">GooseX</span> - where ambition takes flight!</p>
+            </section>
+            <section id="info-section">
+                <section>
+                    <h3 id="contact-shortcut" tabindex="0" aria-label="kontakt informasjon">KONTAKT OSS</h3>
+                    <ul>
+                        <li tabindex="0" aria-label="adresse"><i class="fa-solid fa-location-dot"></i><strong>Adresse: </strong>B R A Veien 4, 1757 Halden</li>
+                        <li tabindex="0" aria-label="telefon"><i class="fa-solid fa-mobile-screen-button"></i><strong>Telefon: </strong>69 60 80 00</li>
+                        <li tabindex="0" aria-label="epost"><i class="fa-solid fa-envelope"></i><strong>E-post: </strong><a href="mailto:halden@hiof.no">halden@hiof.no</a></li>
+                        <li tabindex="0" aria-label="åpningstider"><i class="fa-solid fa-clock"></i><strong>Åpningstider: </strong>Stenger 15:00</li>
+                    </ul>
+                </section>
+                <!-- UU-tiltak -->
+                 <!-- Snarvei linker for nåværende side og produktside  -->
+                <section id="footer-shortcuts">
+                    <h3 tabindex="0" aria-label="snarvei linker">SNARVEIER</h3>
+                    <ul>
+                        <li><a href="index.html#popular-shortcut" tabindex="0" aria-label="snarvei til produkter">Produkter</a></li>
+                        <li><a href="index.html#category-shortcut" tabindex="0" aria-label="snarvei til kategorier">Kategorier</a></li>
+                        <li><a href="#contact-shortcut"  tabindex="0" aria-label="snarvei til kontaktinformasjon">Kontakt oss</a></li>
+                    </ul>
+                </section>
+                <!-- UU-tiltak -->
+                 <!-- Opplesning og lenking til "GooseX" sosiale medier -->
+                <section>
+                    <h3 tabindex="0" aria-label="linking til sosiale medier">SOSIALE MEDIER</h3>
+                    <ul id="social-media-icon">
+                        <li><a href="https://www.instagram.com/" tabindex="0" aria-label="link til instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/" tabindex="0" aria-label="link til facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/home" tabindex="0" aria-label="link til LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://no.pinterest.com/" tabindex="0" aria-label="link til pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+            <!-- UU-tiltak -->
+             <!-- Snarvei link til "usynlig"-snarvei-boks i toppen av nettsiden for tab-navigering mellom sidene -->
+            <aside id="shortcut-position-box">
+             <a href="#invis-shortcuts" id="shortcut-top" tabindex="0" aria-label="snarvei til toppen/snarvei-meny">Til toppen</a>
+            </aside>
+        </footer>
+    </div>
+</body>
+</html>

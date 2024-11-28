@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="Ikoner/css/brands.css" rel="stylesheet">
+    <link href="Ikoner/css/solid.css" rel="stylesheet">
+    <link href="Ikoner/css/regular.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eksamen | Handevogn</title>
+</head>
+<body>
+    <div id="flex-container">
+        <header>                                <!-- UU-tiltak:"aria label" og "tabindex" for "usynlig" tab-navigasjon mellom hovedsidene -->
+            <aside id="invis-shortcuts">        <!-- som etter hvert går gjennom headeren-->
+                <details>
+                    <summary>
+                        <h1 tabindex="0" aria-label="snarvei meny">snarvei-meny| trykk enter</h1>
+                    </summary>
+                <ul>
+                <li>
+                    <details>
+                    <summary>
+                        Forside
+                    </summary>
+                    <a href="index.html#popular-shortcut">1/4 Populære varer</a>
+                    <a href="index.html#category-shortcut">2/4 Kategorier</a>
+                    <a href="index.html#review-shortcut">3/4 Anmeldelser</a>
+                    <a href="index.htmlfooter-shortcuts">4/4 Footer</a>
+                </details></li>
+                <li>
+                    <details>
+                    <summary>
+                        produktside
+                    </summary>
+                    <a href="product.html#">1/3 Produkt</a>
+                    <a href="product.html#lignende-produkter">2/3 Lignende produkter</a>
+                    <a href="product.html#footer-shortcuts">3/3 Footer</a>
+                </details>
+            </li>
+                <li>
+                    <details>
+                        <summary>
+                            Handlevogn
+                        </summary>
+                        <a href="checkout.html#shopping-cart">1/5 Handlekurv</a>
+                        <a href="checkout.html#personalia-section">2/5 Dine Opplysninger</a>
+                        <a href="checkout.html#delivery-section">3/5 Levering</a>
+                        <a href="checkout.html#payment-section">4/5 Betaling</a>
+                        <a href="checkout.html#footer-shortcuts">5/5 Footer</a>
+                    </details>
+                </li>
+                </ul>   
+                </details>
+                </aside>
+            <div id="global-header">
+                <label for="search-input"></label>
+                    <section id="header-search">
+                        <form id="search-header-box">
+                        <input type="text" id="search-input" placeholder="Søk her .." aria-label="Søkeboks">
+                        <button tabindex="0" aria-label="søke-knapp"><i id="search-box-icon" class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </section>
+                <nav>
+                    <ul>
+                        <li><a class="hover" href="index.html" tabindex="0" aria-label="">Hjem</a></li>
+                        <li><a class="hover" href="index.html#popular-shortcut" tabindex="0" aria-label="snarvei til produkter">Produkter</a></li>
+                        <li><a href="index.html" id="logo" tabindex="0" aria-label="Logo, snarvei til forsiden"><img src="bilder/toy.jpg"  alt="Logo: bilde av badeand"></a></li>
+                        <li><a class="hover" href="index.html#category-shortcut" tabindex="0" aria-label="snarvei til kategorier">Kategorier</a></li>
+                        <li><a class="hover" href="index.html#contact-shortcut" tabindex="0" aria-label="snarvei til Kontakt-informasjon">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+                <section id="account-direct">
+                    <a href="#" tabindex="0" aria-label="snarvei til bruker innstillinger"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" tabindex="0" aria-label="snarvei til favoritter"><i class="fa-solid fa-heart"></i></a>
+                    <a href="checkout.html" tabindex="0" aria-label="snarvei til handlevogn"><i class="fa-solid fa-cart-shopping"></i></a>
+                </section>
+            </div>
+        </header>
+        <main>
+            <div id="checkout-box">
+                <section id="breadcrumb">
+                    <a href="index.html" tabindex="0" aria-label="linker til forsiden"><i class="fa-solid fa-arrow-left"></i>Fortsett å handle</a>
+                </section>
+                <h1 tabindex="0" aria-label="Kasse">Kasse</h1>
+                <section id="shopping-cart">
+                    <h2 class="checkout-h2" tabindex="0" aria-label="Handlekurv">1. Shoppingbagen din</h2>
+                    
+                                                    <!--     UU-tiltak - handlevogn varer     -->
+                                                    <!--          Aria-albels & tabindexer      -->
+                                                    <!-- Utenom navn og pris, så er det størrelsesvelger og
+                                                         antall som trenger tilretteligging. Vet at buttons leses opp
+                                                         av opplesningsverktøy, så har prøvd å holdt aria-labelsene instruktiv     --> 
+
+                                                            <!-- Handlevogn-element 1-->    
+                    <article id="shopping-card1" class="shopping-ware" itemscope itemtype="https://schema.org/Product">
+                        <img src="bilder/angrygoose.png" alt="misfornøyd gås" itemprop="image">
+                        <section class="shopping-ware-info">
+                            <a href="product.html" tabindex="0" aria-label="produkt navn"><span itemprop="name">PRODUCT NAME</span></a>
+                            <section class="ware-text">
+                                    <p>
+                                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        <span itemprop="priceCurrency" content="NOK">Kr</span> 
+                                        <span itemprop="price" content="1999">1999</span>
+                                        </span>
+                                    </p>
+                                    <p>Farge: <span itemprop="color">beige</span></p>
+                            </section>
+                        </section>
+                        <form class="ware-form">
+                            <label for="size">Størrelse:</label>
+                            <select class="size-selector" name="size" id="size" tabindex="0" aria-label="størrelses velger">
+                                <option value="x-small" tabindex="0" aria-label="størrelse: ekstra liten">XS</option>
+                                <option value="small" selected tabindex="0" aria-label="størrelse: liten ">S</option>
+                                <option value="medium" tabindex="0" aria-label="størrelse: medium ">M</option>
+                                <option value="large" tabindex="0" aria-label="størrelse: stor ">L</option>
+                                <option value="x-large" tabindex="0" aria-label="størrelse: ekstra stor">XL</option>
+                            </select>
+                            <label for="amount1">Antall:</label>
+                            <input type="number" id="amount1" name="amount1" value="1" min="1" max="10" tabindex="0" aria-label="antall stk av varen">
+                        </form>
+                        <section class="ware-icon">
+                            <button class="fave-button" tabindex="0" aria-label="legg til i favoritter"><i class="fa-regular fa-heart"></i></button>
+                            <i class="fa-solid fa-trash"></i>
+                        </section>
+                    </article>
+                                                                <!-- Handlevogn element 2-->
+                    
+                    <article id="shopping-card2" class="shopping-ware" itemscope itemtype="https://schema.org/Product">
+                        <img src="bilder/angrygoose.png" alt="misfornøyd gås" itemprop="image">
+                        <section class="shopping-ware-info">
+                            <a href="product.html" tabindex="0" aria-label="produkt navn"><span itemprop="name">PRODUCT NAME</span></a>
+                            <section class="ware-text">
+                                    <p>
+                                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        <span itemprop="priceCurrency" content="NOK">Kr</span> 
+                                        <span itemprop="price" content="1999">1999</span>
+                                        </span>
+                                    </p>
+                                    <p>Farge: <span itemprop="color">beige</span></p>
+                            </section>
+                        </section>
+                        <form class="ware-form">
+                            <label for="size2">Størrelse:</label>
+                            <select class="size-selector" name="size2" id="size2" tabindex="0" aria-label="størrelses velger">
+                                <option value="x-small" tabindex="0" aria-label="størrelse: ekstra liten">XS</option>
+                                <option value="small" tabindex="0" aria-label="størrelse: liten ">S</option>
+                                <option value="medium" selected tabindex="0" aria-label="størrelse: medium ">M</option>
+                                <option value="large" tabindex="0" aria-label="størrelse: stor ">L</option>
+                                <option value="x-large" tabindex="0" aria-label="størrelse: ekstra stor">XL</option>
+                            </select>
+                            <label for="amount2">Antall:</label>
+                            <input type="number" id="amount2" name="amount2" value="3" min="1" max="10" tabindex="0" aria-label="antall stk av varen">
+                        </form>
+                        <section class="ware-icon">
+                            <button class="fave-button" tabindex="0" aria-label="legg til i favoritter"><i class="fa-regular fa-heart"></i></button>
+                            <i class="fa-solid fa-trash"></i>
+                        </section>
+                    </article>
+                                                            <!-- Handlevogn-element 3-->
+                    
+                    <article id="shopping-card3" class="shopping-ware" itemscope itemtype="https://schema.org/Product">
+                        <img src="bilder/angrygoose.png" alt="misfornøyd gås" itemprop="image">
+                        <section class="shopping-ware-info">
+                            <a href="product.html" tabindex="0" aria-label="produkt navn"><span itemprop="name">PRODUCT NAME</span></a>
+                            <section class="ware-text">
+                                    <p>
+                                        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        <span itemprop="priceCurrency" content="NOK">Kr</span> 
+                                        <span itemprop="price" content="1999">1999</span>
+                                        </span>
+                                    </p>
+                                    <p>Farge: <span itemprop="color">beige</span></p>
+                            </section>
+                        </section>
+                        <form class="ware-form">
+                            <label for="size3">Størrelse:</label>
+                            <select class="size-selector" name="size3" id="size3" tabindex="0" aria-label="størrelses velger">
+                                <option value="x-small" tabindex="0" aria-label="størrelse: ekstra liten">XS</option>
+                                <option value="small" tabindex="0" aria-label="størrelse: liten ">S</option>
+                                <option value="medium" tabindex="0" aria-label="størrelse: medium ">M</option>
+                                <option value="large" tabindex="0" aria-label="størrelse: stor ">L</option>
+                                <option value="x-large" selected tabindex="0" aria-label="størrelse: ekstra stor">XL</option>
+                            </select>
+                            <label for="amount3">Antall:</label>
+                            <input type="number" id="amount3" name="amount3" value="7" min="1" max="10" tabindex="0" aria-label="antall stk av varen">
+                        </form>
+                        <section class="ware-icon">
+                            <button class="fave-button" tabindex="0" aria-label="legg til i favoritter"><i class="fa-regular fa-heart"></i></button>
+                            <i class="fa-solid fa-trash"></i>
+                        </section>
+                    </article>
+                </section>
+
+                                                                    <!--  UU-tiltak - Opplysnings-seksjon -->
+                                                        <!-- Prøvd å holdt dette kort og tydelig -->
+                                                        <!-- Konkrete Aria-labels og tabindexer for å sørge for at -->
+                                                        <!-- utfyllingen skjer i den rekkefølgen det skal, og den er instruktiv. -->
+                                                                       
+                <section id="personalia-section">
+                    <h2 class="checkout-h2"  tabindex="0" aria-label="Utfylling av personalia for levering">2. DINE OPPLYSNINGER</h2>
+                    <form id="personalia-form">
+                        <h4>Leveringsadresse</h4>
+                        <section id="for-etter-navn">
+                            <section id="f-navn">
+                                <label for="fornavn">Fornavn:</label>
+                                <input type="text" id="fornavn" name="fornavn" placeholder="Donald*" autocomplete="given-name" required  tabindex="0" aria-label="skriv fornavn">
+                            </section>
+                            <section id="e-navn">
+                                <label for="etternavn">Etternavn:</label>
+                                <input type="text" id="etternavn" name="etternavn" placeholder="Duck*" autocomplete="family-name" required  tabindex="0" aria-label="skriv etternavn">
+                            </section>
+                        </section>
+                        <section>
+                            <label for="gateadresse">Gateadresse:</label>
+                            <input type="text" id="gateadresse" name="gateadresse" placeholder="BRA veien 4" required tabindex="0" aria-label="skriv adresse">
+                        </section>
+                        <section id="post-sted-nr">
+                            <section id="postnr">
+                                <label for="postnummer">Postnr:</label>
+                                <input type="number" id="postnummer" name="postnummer" min="1000" max="9999" placeholder="1234*" required  tabindex="0" aria-label="skriv postnr">
+                            </section>
+                            <section id="post-place">
+                                <label for="poststed">Poststed:</label>
+                                <input type="text" id="poststed" name="poststed" placeholder="Skriv inn poststed" required tabindex="0" aria-label="poststed: feks Halden">
+                            </section>
+                        </section>
+                        <h4>Kontakt-informasjon</h4>
+                        <section>
+                            <label for="e-post">E-post:</label>
+                            <input type="email" name="e-post" id="e-post" placeholder="Donald-duck@hiof.no" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" autocomplete="email" required  tabindex="0" aria-label="skriv epostadresse">
+                        </section>
+                        <section>
+                            <label for="telefon">Telefon</label>
+                            <input type="tel" name="telefon" id="telefon" placeholder="987 ** 432" pattern="[0-9]{8,}" required tabindex="0" aria-label="skriv telefonnummer">
+                            <label for="lagre"></label>
+                            <input type="submit" name="lagre" id="lagre" value="Lagre" tabindex="0" aria-label="knapp for lagring">
+                            <a href="#" tabindex="0" aria-label="avbryt knapp">Avbryt</a>
+                        </section>
+                    </form>
+                </section>
+
+                                                <!--     UU-tiltak     -->
+                                                <!--     aria-labels tabindex, aria-checked      -->
+                                                <!--     "Hva", "hvor lenge", "pris" i labelesene da det
+                                                          er den viktigste infoen som trengs å bli fortalt.
+                                                          <p> blir lest opp av oppsleningsverktøy, aria-describedby unnødvendig her     -->
+                <section id="delivery-section">
+                    <h2 class="checkout-h2" tabindex="0" aria-label="leverings-seksjon, velg ett av tre alternativ nedenfor">3. LEVERING</h2>
+                    <section id="deliv-box">
+                        <h4>LEVERINGSVALG</h4>
+                            <section id="deliv-express">
+                                <section id="deliv-top-flex">
+                                    <section id="deliv-top-left">
+                                        <label for="express">
+                                        <input type="radio" name="levering" id="express" aria-checked="true" checked tabindex="0" aria-label="express hjemlevering, 3 - 4 virkedager, 59 kr. Forhånds-Markert"> Express Hjemlevering</label>
+                                    </section>
+                                    <section id="deliv-top-right">
+                                        <p>59 kr </p><i class="fa-solid fa-truck-fast"></i>
+                                    </section>
+                                </section>
+                                <p class="deliv-time">3-4 Virkedager</p>
+                                <p>Bestill hverdag før kl 08:00* for levering neste arbeidsdag. 
+                                    Leveres hjem til deg før frokost mandag til lørdag. 
+                                    *For levering til postnummer 4000-7999 er leveringstiden 
+                                    2 arbeidsdager, for postnummer 8000-9999 er leverinstiden 3
+                                     arbeidsdager.
+                                </p>
+                            </section>
+                            <section id="deliv-pakke">
+                                <section id="deliv-pakke-flex">
+                                    <section id="deliv-pakke-left">
+                                    <label for="pakke">
+                                        <input type="radio" name="levering" aria-checked="false" id="pakke" tabindex="0" aria-label="utlevering til butikk, 1-3 virkedager, pris: 59 kr"> Express Pakke til utleveringssted
+                                    </label>
+                                    </section>
+                                    <section id="deliv-pakke-right">
+                                        <p>59 kr </p><i class="fa-solid fa-location-dot"></i>
+                                    </section>
+                                </section>
+                                <p class="deliv-time">1-3 Virkedager</p>
+                            </section>
+                            <section id="deliv-home">
+                                <section id="deliv-home-flex">
+                                    <section id="deliv-home-left">
+                                    <label for="home">
+                                        <input type="radio" name="levering" id="home" aria-checked="false" tabindex="0" aria-label="hjemmelevering, 4 til 7 virkedager, pris: 59 kr"> Express Hjemlevering
+                                    </label>
+                                    </section>
+                                    <section id="deliv-home-right">
+                                        <p>59 kr </p><i class="fa-solid fa-box"></i>
+                                    </section>
+                                </section>
+                                <p class="deliv-time">4-7 Virkedager</p>
+                                <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                            </section>
+                    </section>
+                </section>
+                
+                
+                                            <!--     UU-tiltak     -->
+                                            <!-- Aria-labels, aria-describedby, tabindex, aria-checked  -->
+                                            <!-- Vet at labels blir lest opp, så har prøvd å gjøre labels'a
+                                                 beskrivende i forhold til hva man skal gjøre og boksene trenger.
+                                                 F.eks, antall tall                                                  -->
+                                                                     
+                                                                            
+                <section id="payment-section">
+                    <h2 tabindex="0" aria-label="betalings seksjon">4. BETALING</h2>
+                    <section id="payment-box">
+                        <section id="payment-head">
+                            <h4 tabindex="0" aria-label="betal med kort. Instruksjoner følger">BETAL MED KORT</h4>
+                            <i class="fa-solid fa-credit-card"></i>
+                        </section>
+                        <form id="payment-form">
+                            <section id="card-nr">
+                                <label for="cardnr">Kortnummer
+                                <input type="number" name="card" id="cardnr" placeholder="404404****404.." required tabindex="0" aria-label="skriv kortnummer, 16 tall">
+                            </label>
+                        </section>
+                            <section id="payment-box-bottom">
+                                <section id="card-date">
+                                    <label for="card-nr-date">Utløpsdato</label>
+                                    <input type="date" name="card-date" id="card-nr-date" required tabindex="0" aria-label="skriv kortets utløpsdato, måned og år">
+                                </section>
+                                <section id="CVC">
+                                    <label for="CVC/CVV">CVC/CVV</label>
+                                    <input type="number" id="CVC/CVV" name="CVC" min="001" max="999" placeholder="CVC/CVV" required tabindex="0" aria-label="sikkerhetsskode, 3 tall">
+                                </section>
+                            </section>
+                            <p>Å betale inkl. mva.</p>
+                            <p id="payment-price" tabindex="0" aria-label="totalpris: 1199 kr, merverdiavgift er inkludert">1 199 kr</p>
+                            <label for="complete-button"></label>
+                            <input type="submit" name="complete-payment" id="complete-button" value="Fullfør kjøp" tabindex="0" aria-label="fullfør kjøp">
+                        </form>
+                        <section id="payment-bottom">
+                            <p aria-labelledby="complete-button">
+                                Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+                                Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger 
+                                uriktige eller ufullstendige opplysninger.
+                            </p>
+                            <section id="checkbox1">
+                                <label for="news-letter">
+                                <input type="checkbox" name="newsletter" aria-checked="false" id="news-letter" tabindex="0" aria-label="avksyningsboks for nyhetsbrev">
+                                </label>
+                                <p aria-labelledby="news-letter">Ja takk! Send nyhetsbrev til meg.</p>
+                            </section>
+                            <section id="checkbox2">
+                                <label for="news-text">
+                                <input type="checkbox" name="news-text" id="news-text" aria-checked="false" tabindex="0" aria-label="avkrysningsbok for tilbud og nyheter på tekstmeldinger">
+                                </label>
+                                <p aria-labelledby="news-text">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <!--       UU-tiltak       -->
+             <!-- Tab-dirigering og opplesning for kontaktinfo -->
+            <section id="footer-logo" itemscope itemtype="https://schema.org/Organization">
+                <img src="bilder/toy.jpg" alt="logo, bilde av and" id="footer-img">
+                <p><span itemprop="name">GooseX</span> - where ambition takes flight!</p>
+            </section>
+            <section id="info-section">
+                <section>
+                    <h3 id="contact-shortcut" tabindex="0" aria-label="kontakt informasjon">KONTAKT OSS</h3>
+                    <ul>
+                        <li tabindex="0" aria-label="adresse"><i class="fa-solid fa-location-dot"></i><strong>Adresse: </strong>B R A Veien 4, 1757 Halden</li>
+                        <li tabindex="0" aria-label="telefon"><i class="fa-solid fa-mobile-screen-button"></i><strong>Telefon: </strong>69 60 80 00</li>
+                        <li tabindex="0" aria-label="epost"><i class="fa-solid fa-envelope"></i><strong>E-post: </strong><a href="mailto:halden@hiof.no">halden@hiof.no</a></li>
+                        <li tabindex="0" aria-label="åpningstider"><i class="fa-solid fa-clock"></i><strong>Åpningstider: </strong>Stenger 15:00</li>
+                    </ul>
+                </section>
+                <!-- UU-tiltak -->
+                 <!-- Snarvei linker for nåværende side, produktside og kontakinformasjon  -->
+                <section id="footer-shortcuts">
+                    <h3 tabindex="0" aria-label="snarvei linker">SNARVEIER</h3>
+                    <ul>
+                        <li><a href="index.html#popular-shortcut" tabindex="0" aria-label="snarvei til produkter">Produkter</a></li>
+                        <li><a href="index.html#category-shortcut" tabindex="0" aria-label="snarvei til kategorier">Kategorier</a></li>
+                        <li><a href="#contact-shortcut"  tabindex="0" aria-label="snarvei til kontaktinformasjon">Kontakt oss</a></li>
+                    </ul>
+                </section>
+                <!-- UU-tiltak -->
+                 <!-- Opplesning og lenking til "GooseX" sosiale medier -->
+                <section>
+                    <h3 tabindex="0" aria-label="linking til sosiale medier">SOSIALE MEDIER</h3>
+                    <ul id="social-media-icon">
+                        <li><a href="https://www.instagram.com/" tabindex="0" aria-label="link til instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/" tabindex="0" aria-label="link til facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/home" tabindex="0" aria-label="link til LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://no.pinterest.com/" tabindex="0" aria-label="link til pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+            <!-- UU-tiltak -->
+             <!-- Snarvei link til "usynlig"-snarvei-boks i toppen av nettsiden for tab-navigering mellom sidene -->
+            <aside id="shortcut-position-box">
+             <a href="#invis-shortcuts" id="shortcut-top" tabindex="0" aria-label="snarvei til toppen/snarvei-meny">Til toppen</a>
+            </aside>
+        </footer>
+    </div>
+</body>
+</html>
