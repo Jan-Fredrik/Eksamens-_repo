@@ -209,16 +209,16 @@
                         <section id="for-etter-navn">
                             <section id="f-navn">
                                 <label for="fornavn">Fornavn:</label>
-                                <input type="text" id="fornavn" name="fornavn" placeholder="Donald*" autocomplete="given-name" required  tabindex="0" aria-label="skriv fornavn">
+                                <input type="text" id="fornavn" name="fornavn" placeholder="Donald*" autocomplete="given-name" pattern="^[A-ZÆØÅa-zæøåàáäâãéèêëíìîïñóòôöõúùûüÿç'-]{1,50}$" required  tabindex="0" aria-label="skriv fornavn">
                             </section>
                             <section id="e-navn">
                                 <label for="etternavn">Etternavn:</label>
-                                <input type="text" id="etternavn" name="etternavn" placeholder="Duck*" autocomplete="family-name" required  tabindex="0" aria-label="skriv etternavn">
+                                <input type="text" id="etternavn" name="etternavn" placeholder="Duck*" autocomplete="family-name" pattern="^[A-ZÆØÅa-zæøåàáäâãéèêëíìîïñóòôöõúùûüÿç' -]{1,50}$" required  tabindex="0" aria-label="skriv etternavn">
                             </section>
                         </section>
                         <section>
                             <label for="gateadresse">Gateadresse:</label>
-                            <input type="text" id="gateadresse" name="gateadresse" placeholder="BRA veien 4" required tabindex="0" aria-label="skriv adresse">
+                            <input type="text" id="gateadresse" name="gateadresse" placeholder="BRA veien 4" pattern="^[A-ZÆØÅa-zæøå0-9 .,'-]{1,100}$" required tabindex="0" aria-label="skriv adresse">
                         </section>
                         <section id="post-sted-nr">
                             <section id="postnr">
@@ -227,7 +227,7 @@
                             </section>
                             <section id="post-place">
                                 <label for="poststed">Poststed:</label>
-                                <input type="text" id="poststed" name="poststed" placeholder="Skriv inn poststed" required tabindex="0" aria-label="poststed: feks Halden">
+                                <input type="text" id="poststed" name="poststed" placeholder="Skriv inn poststed" autocomplete="address-level2" required tabindex="0" aria-label="poststed: feks Halden">
                             </section>
                         </section>
                         <h4>Kontakt-informasjon</h4>
@@ -237,10 +237,10 @@
                         </section>
                         <section>
                             <label for="telefon">Telefon</label>
-                            <input type="tel" name="telefon" id="telefon" placeholder="987 ** 432" pattern="[0-9]{8,}" required tabindex="0" aria-label="skriv telefonnummer">
+                            <input type="tel" name="telefon" id="telefon" placeholder="987 ** 432" pattern="[0-9]{8,}" autocomplete="tel" required tabindex="0" aria-label="skriv telefonnummer">
                             <label for="lagre"></label>
                             <input type="submit" name="lagre" id="lagre" value="Lagre" tabindex="0" aria-label="knapp for lagring">
-                            <a href="#" tabindex="0" aria-label="avbryt knapp">Avbryt</a>
+                            <a href="#" tabindex="0" role="button" aria-label="avbryt knapp">Avbryt</a>
                         </section>
                     </form>
                 </section>
