@@ -743,7 +743,7 @@ footer{
     background-color: #cfcfcf;
     flex-wrap: wrap;
     background-image: linear-gradient(#ffffff, #dbdbdb);
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 
     #footer-img{
         border-radius: 200px;
