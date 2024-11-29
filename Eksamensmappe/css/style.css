@@ -1727,6 +1727,7 @@ label {
     right: 49px;
     bottom: -39px;
     position: absolute;
+    text-decoration: underline;
 }
 
 #invis-shortcuts{
@@ -2148,7 +2149,7 @@ section:hover{
 
 *:hover {
     text-decoration: inherit;
-    background-color: inherit;
+    
 }
 
 #global-header ul a:hover {
